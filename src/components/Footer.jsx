@@ -42,8 +42,8 @@ return ( <footer className="premium-footer">
 
         <div className="footer-address">
           SHOP NO.111, FIRST FLOOR,
-          HORIZON PARK, HOSPITAL KILWANI ROAD,
-          SILVASSA.
+          Horizon Park, Opposite Collector Bungalows/Osit, Naroli Main Road,
+          Silvassa, Dadra and Nagar Haveli 396230.
         </div>
 
         <a
