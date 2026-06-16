@@ -37,7 +37,7 @@ export default function HomePage({ go }) {
             <div className="row align-items-center min-vh-100 pt-5">
               <div className="col-lg-7">
                 <p className="eyebrow">Innovate . Develop . Succeed</p>
-                <h1>Technology solutions that move growing businesses forward.</h1>
+                <h2>Technology solutions that move growing businesses forward.</h2>
                 <p className="hero-copy">Inspiration Soft Solutions designs, develops, hosts, and maintains modern digital products, from polished business websites to custom applications and finance-ready eKYC modules.</p>
                 <div className="hero-actions">
                   <a className="btn primary-action" href="#contact">Start a Project</a>
