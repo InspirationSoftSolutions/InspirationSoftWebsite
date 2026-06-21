@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { siteDefaults, supabase } from './data';
+import { FaCheck } from 'react-icons/fa6';
 
 export default function ContactSection({
   services = siteDefaults.services,
@@ -43,15 +44,32 @@ export default function ContactSection({
   };
 
   return (
-    <section className="section-pad contact-section" id="contact">
+    <section className="section-pad tech-section" id="contact">
       <div className="container">
+        <div className="particles" aria-hidden="true">
+            {Array.from({ length: 24 }, (_, index) => (
+              <span
+                key={index}
+                style={{
+                  '--x': `${(index * 4.1) % 100}%`,
+                  '--duration': `${7 + index * 0.22}s`,
+                  '--delay': `${index * -0.36}s`
+                }}
+              />
+            ))}
+          </div>
         <div className="row g-5 align-items-start">
           <div className="col-lg-5">
             <p className="eyebrow">Contact</p>
             <h2>Tell us what you want to build.</h2>
             <p className="muted-copy">Share your requirement and our team will map the right design, software, database, hosting, and maintenance path.</p>
             <div className="contact-points">
-              {contactPoints.map(point => <span key={point}>{point}</span>)}
+              {contactPoints.map(point => (
+                <span key={point}>
+                  <FaCheck aria-hidden="true" />
+                  {point}
+                </span>
+              ))}
             </div>
           </div>
           <div className="col-lg-7">

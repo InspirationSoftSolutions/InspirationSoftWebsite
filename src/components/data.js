@@ -1,5 +1,6 @@
 import { supabase } from '../lib/supabase';
-
+export const headertransparentlogo = '/assets/Inspiration-landscape-transperent-logo.png';
+export const headerlogo = '/assets/Inspiration-landscape-logo.png';
 export const logo = '/assets/inspiration-logo-transparent.png';
 export const logoIcon = '/assets/inspiration-icon-transparent.png';
 export const landingVideo = '/assets/landing-background.mp4';

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" fill="none">
+  <rect width="1400" height="760" fill="#fbf7ff"/>
+  <path d="M0 602C178 507 296 538 469 596C663 661 801 671 1007 578C1151 513 1270 490 1400 520V760H0V602Z" fill="#efe6ff"/>
+  <circle cx="1050" cy="245" r="250" fill="url(#glow)" opacity=".55"/>
+  <g stroke="#7c3aed" stroke-opacity=".2">
+    <path d="M90 120h1220M90 220h1220M90 320h1220M90 420h1220M90 520h1220"/>
+    <path d="M180 80v500M300 80v500M420 80v500M540 80v500M660 80v500M780 80v500M900 80v500M1020 80v500M1140 80v500M1260 80v500"/>
+  </g>
+  <g transform="translate(220 150)" filter="url(#shadow)">
+    <rect width="420" height="290" rx="28" fill="#fff" stroke="#7c3aed" stroke-opacity=".22"/>
+    <rect x="38" y="42" width="146" height="82" rx="18" fill="#f4ecff"/>
+    <rect x="210" y="42" width="172" height="82" rx="18" fill="#f4ecff"/>
+    <rect x="38" y="154" width="344" height="96" rx="18" fill="#130b2d"/>
+    <path d="M72 203h94M196 203h58M284 203h58" stroke="#c084fc" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(780 230)" filter="url(#shadow)">
+    <rect width="350" height="260" rx="30" fill="#130b2d"/>
+    <path d="M82 178V98M148 178V58M214 178v-54M280 178V78" stroke="#c084fc" stroke-width="24" stroke-linecap="round"/>
+    <path d="M70 180h230" stroke="#fff" stroke-opacity=".68" stroke-width="10" stroke-linecap="round"/>
+    <path d="M82 118c78 46 143-68 198-92" stroke="#9b4dff" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <defs>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1050 245) rotate(90) scale(250)">
+      <stop stop-color="#c084fc"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-70" y="-70" width="560" height="430" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="28" stdDeviation="30" flood-color="#2a006f" flood-opacity=".18"/>
+    </filter>
+  </defs>
+</svg>

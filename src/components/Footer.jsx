@@ -1,98 +1,73 @@
 import React from "react";
 import {
-FaLinkedinIn,
-FaInstagram,
-FaXTwitter,
-FaEnvelope
+  FaEnvelope,
+  FaInstagram,
+  FaLinkedinIn,
+  FaLocationPin,
+  FaXTwitter
 } from "react-icons/fa6";
 
 const LOGO = "/assets/InspirationWhitelogo.png";
 
 export default function Footer() {
-return ( <footer className="premium-footer">
+  return (
+    <footer className="premium-footer demo-footer">
+      <div className="container">        
+        <div className="footer-grid demo-footer-grid">
+          <div>
+            <img src={LOGO} alt="Inspiration Soft Solutions" className="footer-logo" />
+            <p className="footer-desc">
+              Tech company delivering web, software, product, database,
+              hosting, and digital solutions for growing businesses.
+            </p>
+          </div>
 
-  <div className="container">
+          <div>
+            <h5 className="footer-heading">Services</h5>
+            <a href="#services" className="footer-link">Web & Software Applications</a>
+            <a href="#services" className="footer-link">Website Design</a>
+            <a href="#services" className="footer-link">Website Development</a>
+            <a href="#services" className="footer-link">Database Development</a>
+            <a href="#services" className="footer-link">Hosting & Maintenance</a>
+          </div>
 
-    <div className="footer-main">
+          <div>
+            <h5 className="footer-heading">Solutions</h5>
+            <a href="#solutions" className="footer-link">Inventory Management</a>
+            <a href="#solutions" className="footer-link">Construction Management</a>
+            <a href="#solutions" className="footer-link">eKYC / Account Opening</a>
+           
+          </div>
 
-      {/* LEFT LOGO */}
-      <div className="footer-logo-side">
-        <img
-          src={LOGO}
-          alt="Inspiration Soft Solutions"
-          className="footer-large-logo"
-        />
-      </div>
-
-      {/* CENTER DESCRIPTION */}
-      <div className="footer-content">
-
-        <h4>INSPIRATION SOFT SOLUTIONS</h4>
-
-        <p>
-          Modern web applications, enterprise software,
-          mobile solutions and digital transformation
-          services built for secure business growth.
-        </p>
-
-      </div>
-
-      {/* RIGHT CONTACT */}
-      <div className="footer-contact-side">
-
-        <div className="footer-address">
-          SHOP NO.111, FIRST FLOOR,
-          Horizon Park, Opposite Collector Bungalows/Osit, Naroli Main Road,
-          Silvassa, Dadra and Nagar Haveli 396230.
+          <div>
+            <h5 className="footer-heading">Contact</h5>
+            <div className="footer-contact-line">
+              <FaLocationPin aria-hidden="true" />
+              <span>Silvassa, Dadra and Nagar Haveli 396230, India.</span>
+            </div>
+            <a href="mailto:inspirationsoftsolutions@gmail.com" className="footer-contact-line footer-mail">
+              <FaEnvelope aria-hidden="true" />
+              <span>inspirationsoftsolutions@gmail.com</span>
+            </a>
+            <div className="social-links">
+              <a href="https://www.linkedin.com/company/inspirationsoftsolutions/" target="_blank" rel="noreferrer" className="social-link" aria-label="LinkedIn">
+                <FaLinkedinIn />
+              </a>
+              <a href="https://twitter.com/inspirationsoftsol" target="_blank" rel="noreferrer" className="social-link" aria-label="X">
+                <FaXTwitter />
+              </a>
+              <a href="https://www.instagram.com/inspirationsoft" target="_blank" rel="noreferrer" className="social-link" aria-label="Instagram">
+                <FaInstagram />
+              </a>
+            </div>
+          </div>
         </div>
 
-        <a
-          href="mailto:inspirationsoftsolutions@gmail.com"
-          className="footer-email"
-        >
-          <FaEnvelope />
-          inspirationsoftsolutions@gmail.com
-        </a>
-
-        <div className="footer-social">
-
-          <a
-            href="https://www.linkedin.com/company/inspirationsoftsolutions/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaLinkedinIn />
-          </a>
-
-          <a
-            href="https://www.instagram.com/inspirationsoft"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaInstagram />
-          </a>
-
-          <a
-            href="https://twitter.com/inspirationsoftsol"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaXTwitter />
-          </a>
-
+        <div className="footer-bottom demo-footer-bottom">
+          <p>© 2026 Inspiration Soft Solutions. All Rights Reserved.</p>
+          <p>Innovate · Develop · Succeed</p>
         </div>
-
       </div>
-
-    </div>
-
-    <div className="footer-bottom">
-      © 2026 Inspiration Soft Solutions. All Rights Reserved.
-    </div>
-
-  </div>
-
-</footer>
-
-);
+    </footer>
+  );
 }
